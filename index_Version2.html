@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TecnoFix Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="30" stroke="white" stroke-width="2" />
+        <rect x="20" y="28" width="24" height="8" fill="var(--neon2)" rx="2" />
+        <path d="M32 20v24" stroke="white" stroke-width="2" />
+      </svg>
+      <div class="brand">
+        <div>
+          <h1>TecnoFix Solutions</h1>
+        </div>
+      </div>
+    </div>
+    <h3>Tu computadora siempre al máximo</h3>
+    <p>Servicios profesionales en Misantla, Veracruz</p>
+  </header>
+  <nav>
+    <a href="#services">Servicios</a>
+    <a href="#about">Presentación</a>
+    <a href="#tips">Consejos</a>
+    <a href="#testimonials">Testimonios</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <section id="about">
+    <h2>Presentación</h2>
+    <p class="sub">En <strong>TecnoFix Solutions</strong> somos un equipo de profesionales dedicados al mantenimiento, reparación y optimización de equipos de cómputo. Nuestro objetivo es brindar un servicio confiable, rápido y accesible, para que cada cliente disfrute de un rendimiento óptimo en sus dispositivos. Creemos en la innovación, la atención personalizada y en construir relaciones de confianza con nuestra comunidad en Misantla, Veracruz.</p>
+  </section>
+  <section id="services">
+    <h2>Servicios</h2>
+    <p class="sub">Ofrecemos una amplia gama de servicios profesionales para laptops y PC.</p>
+    <!-- ... tarjetas de servicios ... -->
+  </section>
+  <section id="testimonials">
+    <h2>Testimonios</h2>
+    <p class="sub">Clientes que comparten su experiencia con nosotros.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <p>"Llevé mi computadora porque estaba muy lenta, y en menos de un día la dejaron funcionando como nueva. Excelente servicio."</p>
+        <div class="author">- Gabriela Torres</div>
+      </div>
+      <div class="testimonial">
+        <p>"Me instalaron un disco sólido y ahora mi laptop arranca en segundos. Muy profesionales y atentos."</p>
+        <div class="author">- Luis Hernández</div>
+      </div>
+      <div class="testimonial">
+        <p>"Tenía problemas de virus y lograron solucionarlo sin perder mis archivos. Muy recomendable."</p>
+        <div class="author">- Mariana López</div>
+      </div>
+      <div class="testimonial">
+        <p>"Me orientaron sobre cómo mejorar mi PC para diseño gráfico, y ahora corre los programas sin problemas."</p>
+        <div class="author">- Ricardo Sánchez</div>
+      </div>
+    </div>
+  </section>
+  <section id="map">
+    <h2>Ubicación</h2>
+    <iframe src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Misantla,Veracruz" allowfullscreen></iframe>
+  </section>
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p class="sub">Puedes comunicarte con nosotros a través del siguiente formulario o al correo <strong>contacto@tecnofix-misantla.com</strong>.</p>
+    <form>
+      <div class="row">
+        <div class="field"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="Tu correo"></div>
+      </div>
+      <div class="field"><label>Mensaje</label><textarea placeholder="Escribe tu mensaje"></textarea></div>
+      <button type="button" class="btn" onclick="showToast()">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 Mantenimiento Pro - Misantla, Veracruz. Todos los derechos reservados. <br>
+    Correo: contacto@tecnofix-misantla.com
+  </footer>
+  <div class="toast" id="toast">Mensaje enviado correctamente!</div>
+  <script src="script.js"></script>
+</body>
+</html>
