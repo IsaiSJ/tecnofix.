@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TecnoFix Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg1: #ff0000;
+      --bg2: #0a0a0a;
+      --text1: #fff;
+      --muted: #cccccc;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--bg2);
+      color: var(--text1);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--bg1);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--bg1);
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--bg1);
+    }
+    .sub {
+      text-align: justify;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .grid {
+      display: grid;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    }
+    .fade-in {
+      animation: fade 1.5s ease-in-out;
+    }
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TecnoFix Solutions</h1>
+    <p>Servicio técnico y mantenimiento de computadoras</p>
+  </header>
+
+  <nav>
+    <a href="#about-company">Presentación</a>
+    <a href="#services">Servicios</a>
+    <a href="#testimonios">Testimonios</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <!-- Presentación / Objetivo de la empresa -->
+  <section id="about-company">
+    <h2>Presentación</h2>
+    <p class="sub">
+      Somos <strong>TecnoFix Solutions</strong>, un taller especializado en mantenimiento y reparación de computadoras con sede en Misantla, Veracruz.  
+      Nos dedicamos a ofrecer servicios técnicos confiables, eficientes y accesibles, enfocados en extender la vida útil de tus equipos y garantizar su mejor rendimiento.  
+      Atendemos tanto a usuarios domésticos como a pequeñas empresas, proporcionando diagnósticos precisos, soluciones personalizadas y un trato siempre profesional.
+    </p>
+
+    <div class="about grid fade-in" style="grid-template-columns: 1fr; gap:12px;">
+      <div class="card">
+        <h3>Objetivo</h3>
+        <p>
+          Nuestro objetivo es asegurar el óptimo funcionamiento de tus equipos mediante mantenimiento preventivo, reparación especializada y asesoría en seguridad informática.  
+          Buscamos que cada cliente confíe plenamente en su tecnología, reduciendo tiempos de inactividad y costos futuros mediante buenas prácticas de uso, respaldo y protección de datos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services">
+    <h2>Servicios</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      <div class="card fade-in">
+        <h3>Mantenimiento Preventivo</h3>
+        <p>Revisión y limpieza completa del equipo para evitar fallas y mejorar su rendimiento.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>Reparación de Hardware</h3>
+        <p>Diagnóstico y reemplazo de componentes dañados: disco duro, memoria RAM, fuente de poder y más.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>Optimización de Software</h3>
+        <p>Formateo, instalación de sistemas operativos, drivers y programas esenciales.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>Recuperación de Datos</h3>
+        <p>Restauramos información eliminada o inaccesible en discos duros y memorias externas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+      <div class="card fade-in">
+        <p>“Excelente servicio, mi laptop quedó como nueva y muy rápido. ¡Totalmente recomendado!”</p>
+        <p><strong>– Carlos Méndez</strong></p>
+      </div>
+      <div class="card fade-in">
+        <p>“Me ayudaron a recuperar toda mi información después de que mi PC dejó de encender. Muy profesionales.”</p>
+        <p><strong>– Ana López</strong></p>
+      </div>
+      <div class="card fade-in">
+        <p>“Buen trato y precios justos. Se nota que saben lo que hacen.”</p>
+        <p><strong>– Luis Herrera</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p class="sub">¿Necesitas asistencia técnica? Contáctanos a través de los siguientes medios:</p>
+    <div class="card fade-in" style="text-align:center;">
+      <p><strong>Teléfono:</strong> 235 123 4567</p>
+      <p><strong>Correo:</strong> tecnofixsolutions@gmail.com</p>
+      <p><strong>Ubicación:</strong> Misantla, Veracruz</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TecnoFix Solutions. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
